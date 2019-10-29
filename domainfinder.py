@@ -4,6 +4,6 @@ from hackerTarget import getHackerTarget
 
 
 def main():
-	getHackerTarget('genre.com')	
+	getHackerTarget('google.com')	
 
 main()
