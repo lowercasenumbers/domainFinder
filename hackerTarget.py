@@ -1,4 +1,5 @@
 import requests
+
 def getHackerTarget(domain):
 	url = 'https://api.hackertarget.com/hostsearch/?q=' + str(domain)
 	r = requests.get(url)
@@ -8,8 +9,4 @@ def getHackerTarget(domain):
 		domain = line.split(',')
 		domains.append(domain[0])
 	
-	print(*domains, sep="\n")
 	return domains
-
-
-

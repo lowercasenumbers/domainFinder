@@ -1,0 +1,19 @@
+1. Find domains and subdomains related to a domain
+2. Sources:
+	[] crt.sh
+	[] certspotter
+	[x] hackertarget
+	[] threatcrowd
+	[] wayback machine
+	[] facebook
+	[] virustotal
+		- Needs API Key
+	[] findsubdomains
+		- Needs API key
+	[] dns.bufferoverrun
+	[] passivetotal.org
+	[] cpmmunity.riskiq.com
+	[] riddler.io
+	[] dnsdb.org
+	[] certdb.com
+
