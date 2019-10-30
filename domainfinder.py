@@ -13,11 +13,16 @@ def main():
 	args = parser.parse_args()
 	domain = args.domain
 	
-
 	#Sources
-	print(*getHackerTarget(domain), sep="\n")
+	domains = getHackerTarget(domain)
+	domains = domains + getHackerTarget(domain)
 
+	#Remove Duplicates
+	unDomains = []
+	for elem in domains:
+		if elem not in unDomains:
+			unDomains.append(elem)
 	
-
-
+	#Print Domains
+	print(*unDomains, sep="\n")
 main()
