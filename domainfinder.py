@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 from hackerTarget import getHackerTarget
-
+from threatCrowd import getThreatCrowd
 
 def main():
 	# Arguments
@@ -14,8 +14,7 @@ def main():
 	
 	#Sources
 	domains = getHackerTarget(domain)
-	domains = domains + getHackerTarget(domain)
-
+	domains = domains + getThreatCrowd(domain)	
 	#Remove Duplicates
 	unDomains = []
 	for elem in domains:

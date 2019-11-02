@@ -8,5 +8,4 @@ def getHackerTarget(domain):
 	for line in r.iter_lines(decode_unicode=True):
 		domain = line.split(',')
 		domains.append(domain[0])
-	
 	return domains
